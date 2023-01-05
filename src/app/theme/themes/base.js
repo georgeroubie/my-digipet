@@ -38,6 +38,9 @@ const baseTheme = {
     circle: '50%',
     divider: '0.125rem',
   },
+  heights: {
+    menu: '4rem',
+  },
 };
 
 export default baseTheme;
