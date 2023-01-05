@@ -7,6 +7,7 @@ import RoutingLoader from './Loader';
 const Info = lazy(() => import('../pages/info'));
 const Settings = lazy(() => import('../pages/settings'));
 const NotFound = lazy(() => import('../pages/not-found'));
+const Play = lazy(() => import('../pages/play'));
 
 const Routing = () => {
   return (
@@ -25,6 +26,14 @@ const Routing = () => {
         element={
           <RoutingLoader>
             <Settings />
+          </RoutingLoader>
+        }
+      />
+      <Route
+        path="/play"
+        element={
+          <RoutingLoader>
+            <Play />
           </RoutingLoader>
         }
       />
